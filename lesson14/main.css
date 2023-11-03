@@ -1,0 +1,67 @@
+/* Style the images of the seconds, minute, hour hands */
+img {
+    width: 100%;
+    height:100%;
+}
+
+/* Style the Clock element */
+#clock {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 8px;
+    background-image: url("");
+    height: 600px;
+    width: 600px;
+    background-size: 600px 600px;
+    position: relative;
+    animation: changeColor 60s infinite linear;
+
+}
+/*Set the clock hands position to similar stylings, and position absolute */
+#seconds, #minutes, #hours {
+    width: 100%;
+    height: 100%;
+    /*Position absolute makes items sit on top of each other, since we want our clock hands to stack on top of each other. */
+    position: absolute;
+    left:0;
+    top:0;
+    
+}
+
+/* Create a rotation animation using keyframes */
+@keyframes rotate {
+    0% {transform: rotate(0deg);}/* this means at the start of the animation */
+    100% {transform: rotate(360deg);} /* this means at the end of the animation */
+
+}
+
+/* Make the hour rotations take the longest compared to the minute and second hand */
+#hours {
+    animation: rotate 43200s infinite linear;
+}
+
+/* Make the minute hand take the appropriate time to make a complete revolution */
+#minutes {
+    animation: rotate 3600s infinite linear;
+}
+
+/* Make the second hand take the appropriate time to make a complete revolution */
+#seconds {
+    animation: rotate 60s infinite linear;
+}
+
+
+/* Create a change background color animation using keyframes */
+@keyframes changeColour{
+    0% { background-color:rgb(22,22,152); }
+    0% { background-color:rgb(255,136,0);}
+    0% { background-color:rgb(0,255,72);}
+    0% { background-color:rgb(255,0,204);}
+    0% { background-color:rgb(37,111,29);}
+    0% { background-color:rgb(177, 17, 17);}
+    0% { background-color:rgb(17, 119, 76);}
+    0% { background-color:rgb(155, 17, 81);}
+    0% { background-color:rgb(209, 18, 193);}
+    0% { background-color:rgb(40,119,150);}
+    0% { background-color:rgb(168,216,232);}
+}

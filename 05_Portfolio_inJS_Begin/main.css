@@ -1,0 +1,14 @@
+/* Set the font to Gill Sans */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style the details div */
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title> Profile Builder </title>
+</head>
+<body>
+    <h1>Welcome to the Profile Builder</h1>
+    <hr>
+
+    <!-- The main container -->
+    <div class="main">
+        <div class="subcontainer">
+            <!-- left hand side div containing the form -->
+            <div class="left">
+                <!-- added the form container -->
+                <div class="form_container">
+                    <!-- form to collect data -->
+                    <div class="input_div">
+                        <label for="photo"> Photo: </label>
+                        <br>
+                        <input id="photo" name="photo" type="file">
+                    </div>
+                    
+                    <div class="input_div">
+                        <label for="name"> Name: </label>
+                        <br>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    
+                    <div class="input_div">
+                        <label for="email"> Email: </label>
+                        <br>
+                        <input id="email" name="email" type="text">
+                    </div>
+                    
+                    <div class="input_div">
+                        <label for="phone"> Phone: </label>
+                        <br>
+                        <input id="phone" name="phone" type="number">
+                    </div>
+                    
+                    <div class="input_div">
+                        <label for="location"> Location: </label>
+                        <br>
+                        <input id="location" name="location" type="text">
+                    </div>
+
+                    <label for="about"> About:</label>
+                    <br>
+                    <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                    <br>
+
+                    <button id="view_btn">View Profile</button>
+                </div>
+
+            </div>
+            
+            <!-- right hand side div containing the profile -->
+            <div id="profile_view" class="right">
+                <!-- Added right_Center div -->
+                <div class="right_center">
+                    <div id="details">
+                        <!-- this div will contain the image -->
+                        <div class="personal me_photo">
+                            <img id="me" src="static/buffalo.jpg" alt="">
+                        </div>
+                        <!-- This div will contain the icons -->
+                        <div class="personal">
+                            <span class="icon_span">
+                                <a title="facebook social" href="#"> <img class="icon" src="static/facebook.png" alt=""> </a>
+                                <a title="instagram social" href="#"> <img class="icon" src="static/instagram.png" alt=""> </a>
+                                <a title="youtube channel" href="#"> <img class="icon" src="static/youtube.png" alt=""> </a>
+                            </span>
+                        </div>
+    
+                        <!-- This div will contain the details -->
+                        <div class="personal">
+
+                            <div class="outter_aligned_div">
+                                <div class="aligned_div">
+                                    <span>
+                                        <h3>Name:</h3>
+                                        <p id="name_out">Just Kidding</p>
+                                    </span>
+                                    <span>
+                                        <h3>Email:</h3>
+                                        <p id="email_out">just@kidding.mail</p>
+                                    </span>
+                                </div>
+                                <div class="aligned_div">
+                                    <span>
+                                        <h3>Phone:</h3>
+                                        <p id="phone_out">+61456789765</p>
+                                    </span>
+                                    <span>
+                                        <h3>Location:</h3>
+                                        <p id="location_out">Barangaroo, Sydney</p>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <h3>About:</h3>
+                            <span>
+                                <p id="about_out">Ut hendrerit eu sem at dapibus. Vivamus tempor lacus eget est efficitur ornare. Nulla consectetur augue at urna mollis eleifend. Nullam maximus porta condimentum. Curabitur tincidunt sapien et orci suscipit volutpat. Nullam vehicula dolor tellus, vel mollis turpis semper vel. Nulla dictum pharetra suscipit. Fusce elementum, eros eget porttitor ornare, mauris erat commodo eros, non mollis enim justo eget diam.</p>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

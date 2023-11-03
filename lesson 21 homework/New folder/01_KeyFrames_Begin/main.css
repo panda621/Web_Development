@@ -1,0 +1,279 @@
+.animationDiv {
+    height: 500px;
+}
+
+.animationDiv:nth-child(1) {
+    width: 50%;
+}
+
+.animationDiv:nth-child(2) {
+    width: 50%;
+}
+
+.dual {
+    display: flex;
+    justify-content: space-between;
+}
+/************************************/
+/*          Animation One           */
+/************************************/
+/* 
+TODO
+
+1. Create a keyframe animation called leftMove
+    > At 0% the left property should be 0
+    > At 50% the left property should be 50%
+    > At 50% the transform property should be scaleX(-1)
+    > At 100% the left property should be 0
+
+Reference (keyframes): https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+*/
+
+@keyframes leftMove {
+    0%{left: 0%;}
+    50%{left: 50%;
+        transform: scaleX(-1);
+    }
+    100%{left: 0%;}
+}
+
+/*
+TODO
+
+2. Create a keyframe animation called rightMove
+    > At 0% the right property should be 0
+    > At 50% the right property should be 50%
+    > At 50% the transform property should be scaleX(-1)
+    > At 100% the right property should be 0
+
+Reference (keyframes): https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+*/
+
+@keyframes rightMove{
+    0%{right: 0%;}
+    50%{right: 50%;
+        transform: scaleX(-1);
+    }
+    100%{right: 0;}
+}
+
+
+.container {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    background-color: #1f1280;
+}
+
+
+/* 
+TODO
+
+3. Style the div with the class of left (.left)
+        > Set the position to absolute
+        > Set the top to 50%
+        > Set the left to 0
+        > Set the transform to translate(0, -50%)
+        > Set the width to 100px
+        > Set the height to 100px
+        > Set the background-color to gray
+        > Add the leftMove animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    animation-name: leftMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+
+/* 
+TODO
+
+4. Style the div with the class of right (.right)
+        > Set the position to absolute
+        > Set the top to 50%
+        > Set the right to 0
+        > Set the transform to translate(0, -50%)
+        > Set the width to 80px
+        > Set the height to 80px
+        > Set the background-color to brown
+        > Add the rightMove animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+    animation-name: rightMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/************************************/
+/*          Animation Two           */
+/************************************/
+
+/*
+TODO
+
+5. Create a keyframe animation called myAnimation
+    > At 0% the transform property should be translateX(0)
+    > At 25% the transform property should be translateX(200px) and the background-color should be red
+    > At 50% the transform property should be translate(200px, 200px) and the background-color should be yellow
+    > At 75% the transform property should be translate(0, 200px) and the background-color should be green
+    > At 100% the transform property should be translate(0) and the background-color should be blue
+
+Reference (keyframes): https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+*/
+@keyframes myAnimation {
+    0%{transform: translateX(0px);}
+    25%{transform: translateX(200px);
+        background-color: red;
+    }
+    50%{transform: translate(200px, 200px);
+        background-color: yellow;
+    }
+    75%{transform: translate(0, 200px);
+        background-color: green;
+    }
+    100%{transform: translate(0);
+        background-color: blue;
+    }
+}
+
+
+
+/* 
+EXAMPLE IMPLEMENTATION
+
+6. Style the div with the class of box (.box)
+        > Set the width to 200px
+        > Set the height to 200px
+        > Set the background-color to blue
+        > Set the position to relative
+        > Add the myAnimation animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/************************************/
+/*          Animation Three         */
+/************************************/
+.main {
+width: 500px;
+height: 500px;
+position: relative;
+overflow: hidden;
+}
+
+
+/* 
+TODO
+
+7. Create a keyframe animation called moveAnimation
+    > At 0% the transform property should be translate(0, 0)
+    > At 25% the transform property should be translate(400px, 0)
+    > At 50% the transform property should be translate(400px, 400px)
+    > At 75% the transform property should be translate(0, 400px)
+    > At 100% the transform property should be translate(0, 0)
+*/
+@keyframes moveAnimation {
+   0%{transform: translate(0,0);}
+   25%{transform: translate(0px, 0px);}
+   50%{transform: translate(400px, 400px);}
+   75%{transform: translate(400px, 0px);}
+   100%{transform: translate(0px, 400px);}
+}
+
+
+
+/* 
+TODO:
+
+8. Style the div with the class of object (.object)
+        > Set the width to 50px
+        > Set the height to 50px
+        > Set the position to absolute
+        > Set the border-radius to 50%
+        > Set the background-color to #ff6b6b
+        > Add the moveAnimation animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.object {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 14px;
+    background-color: #0b0f84;
+    animation-name: moveAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.object:nth-child(2) {
+    background-color: #166a43;
+    animation-delay: 0.4s;
+}
+
+.object:nth-child(3) {
+    background-color: #6d245c;
+    animation-delay: 0.8s;
+}
+
+.object:nth-child(4) {
+    background-color: #2fdf5b;
+    animation-delay: 1.2s;
+}
+
+.object:nth-child(5) {
+    background-color: #452b0b;
+    animation-delay: 1.6s;
+}
+
+/* yay!

@@ -1,0 +1,45 @@
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#question_card {
+    margin: auto;
+    width: 60%;
+    height: 30vh;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.option_div {
+    margin: 10px 0;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+input {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Style the buttons divs */
+.button_div {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+button {
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(103, 198, 77);
+    padding: 5px 8px;
+    font-size: 1.2em;
+}

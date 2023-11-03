@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asm.css">
+    <script src="asm.js"></script>
+    <script src="localstorage.js"></script>
+    <style>
+        .todo_task{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid green;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 3px;
+        }
+    </style>
+    <title>My TODO List</title>
+</head>
+<body>
+    <!-- 
+
+        ('#task-form');
+        ('.collection');
+        ('.clear-tasks');
+        ('#filter');
+        ('#task');
+
+     -->
+    <div id="task-form">
+        
+        <label for="task">Add Task to TODO List</label>
+        <!-- <label for="todo_item">Add Task to TODO List</label> -->
+        <!-- <input type="text" name="todo_item" id="todo_item"> -->
+        <input type="text" name="task" id="task">
+        
+    </div>
+    <div>
+        <h3>My TODO List</h3>
+        <div id="content">
+            <input type="submit" name="filter" id="filter" value="Filter List">
+            <ul class="collection">
+
+            </ul>
+            <button id="clear_tasks" class="clear-tasks"> Clear Tasks </button>
+        </div>
+    </div>
+    
+</body>
+</html>

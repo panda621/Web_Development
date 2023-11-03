@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Style the body of the document */
+body{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    background-color: black;
+}
+/* Style the h3 elements in the document */
+h3{
+    font-size: 40px;
+}
+/* The paragraphs adn h4s should have the same font size */
+p,h4{
+    font-size: 20px;
+}
+/* Align the p tags in an inline display format */
+p{
+    display: inline-block;
+}
+/* Style the buttons on the display div */
+button {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-left: 16px;
+    background-color: #95B4F2;
+    border: 2px solid #ccc;
+    width: 520px;
+    height: 32px;
+    color: #333;
+    box-shadow: 0 0 3px #777;
+    box-shadow: 0.3em 03em 0 0 #777, inset 0.3em 0.3em 0 0 #777;
+
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+/* Button on hover should chnage its background to yellow */
+button:hover{
+    box-shadow: 0 0 0 0 #E9E67E,
+    inset 6em 3.5em 0 0 #E9E67E;
+
+}
+
+.offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.offset:hover, .offset:focus{
+    box-shadow: 0 0 0 0 var(--hover),
+    inset 6em 3.5em 0 0 var(--hover);
+}

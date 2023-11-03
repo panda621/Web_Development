@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Billy Micah">
+    <meta name="application-name" content="Form Validation Using JS DOM">
+    <meta name="description" content="We use the Javascript Document Object Model to inspect entries on form fields">
+    
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Please fill out the for below accordingly</h1>
+    <hr>
+    <div>
+        <form>
+            <span class="form_field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <p id="name_error"></p>
+            </span>
+
+            <span class="form_field">
+                <label for="location">Location</label>
+                <input type="text" name="location" id="location" placeholder="Enter your location">
+                <p id="location_error"></p>
+            </span>
+
+            <span class="form_field">
+                <label for="profession">Profession</label>
+                <input type="text" name="profession" id="profession" placeholder="Enter your occupation">
+                <p id="profession_error"></p>
+            </span>
+
+            <span class="form_field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <p id="email_error"></p>
+            </span>
+
+            <span class="form_field">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                <p id="phone_error"></p>
+            </span>
+
+            <span class="form_field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <p id="password_error"></p>
+            </span>
+            
+            <span class="form_field">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password">
+                <p id="confirm-password_error"></p>
+            </span>
+            <br>
+            <div>
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Reset" id="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

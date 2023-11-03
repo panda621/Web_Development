@@ -1,0 +1,41 @@
+*{
+    text-align: center;
+    align-items: center;
+  }
+  
+  body {
+    font-family: Helvetica;
+    background-color: #eedddd;
+    
+  }
+  
+  h1 {
+    font-family: Impact;
+  }
+  
+  #main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #displays{
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    justify-content:space-around;
+    background-color:aqua;
+    border-radius: 25px;
+  }
+  
+  #displays > div{
+    background-color:#eedddd;
+    min-height: 100px;
+    width: 200px;
+    height: 120px;
+    border-radius: 25px;
+  }
+  
+  .guesses {
+    /* overflow: scroll; */
+  }
+  

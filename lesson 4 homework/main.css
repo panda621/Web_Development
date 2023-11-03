@@ -1,0 +1,29 @@
+body {
+    background-image: url("https://static.pexels.com/photos/302/dew-rain-raindrops-drops-of-water.jpg");
+    font-family: Verdana;
+    color: white;
+  }
+  
+  h1 {
+    text-shadow: 0px 10px #C9C9C9, 0px 20px #666;
+  }
+  
+  .main {
+      background-color: beige;
+      display: flex;
+      justify-content: center;
+      vertical-align: center;
+  }
+  
+  .centered {
+      width: 50%;
+      height: 100vh;
+      align-items: center;
+      text-align: center;
+      background-color: darkgray;
+  }
+  
+  #change_weather{
+    margin: 10px;
+  }
+  

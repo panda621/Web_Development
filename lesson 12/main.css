@@ -1,0 +1,141 @@
+body, hr {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(185, 138, 228);
+    /* vw = view widths */
+    width: 100vw;
+    /* vh = view height */
+    height: 100vh;
+}
+
+.subcontainer {
+    width: 80vw;
+    min-width: 900px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.left, .right {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 40%;
+    text-align: left;
+}
+.right {
+    width: 60%;
+    text-align: center;
+    background-color: rgb(81, 136, 81);
+}
+
+.form_container {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: aquamarine;
+}
+
+#details {
+    background-color: yellow;
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.personal > #me {
+    width: 240px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    top: -120px;
+}
+
+.personal p {
+    font-size: 1.2em;
+}
+
+.personal > span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.personal a {
+    width:fit-content;
+}
+
+.icon_span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.me_photo {
+    height: 80px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+}
+.input_div {
+    display: block;
+    justify-items: flex-start;
+    border-radius: 10px;
+    
+}
+
+.input_div > label, .input_div > input {
+    font-size: 1.2em;
+}
+
+.outter_aligned_div, .aligned_div {
+    display: flex;
+}
+
+.aligned_div > p {
+    padding: 0;
+}
+
+.aligned_div > span {
+    width: 50%;
+    border: 1px solid rgb(146, 146, 237);
+    /* justify-content: space-around; */
+}
+
+.outter_aligned_div {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.aligned_div {
+    background-color: azure;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+#about {
+    width: fit-content;
+}
+
+#profile_view {
+    visibility: hidden;
+}

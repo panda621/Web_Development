@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+button {
+    outline: 0;
+    border: 0;
+}
+
+.main, .subcontainer, .boxes {
+    display: flex;
+    justify-content: center;
+}
+.main, .subcontainer {
+    min-width: 900px;
+}
+
+.main {
+    width: 100vw;
+}
+
+.subcontainer {
+    padding: 10px;
+    width: 70vw;
+}
+
+.boxes {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.surprises {
+    margin: 15px;
+    background-color: rgb(73, 134, 151);
+    width: 200px;
+    height: 200px;
+}

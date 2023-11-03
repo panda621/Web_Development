@@ -1,0 +1,27 @@
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+}
+
+/* Create a left and right section in the .main element */
+.main {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+/* Style the left section */
+#left {
+  background-color: #f1f1f1;
+  width: 30%;
+  padding: 20px;
+}
+
+/* Style the right section */
+#right {
+  background-color: #ddd;
+  width: 70%;
+  padding: 20px;
+}

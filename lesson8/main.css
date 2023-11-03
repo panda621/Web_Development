@@ -1,0 +1,297 @@
+/* 
+  Provide the style for body:
+  > set the display to flex
+  > set the align-items to center
+  > set the justify-content to center
+  > set the height to 100vh
+  > set the background-color to #073b4c
+*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: #073b4c;
+}
+
+/*
+  Provide the style for the element with class .friendshipCard:
+  > set the position to relative
+  > set the width to 250px
+  > set the height to 350px
+  > set the cursor to pointer
+  > set the transform-style to preserve-3d
+  > set the transform to perspective(2500px)
+  > set the transition to 1s
+*/
+.friendshipCard{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    /*configures the shape of the cursor value options{move, cursor, pointer}*/
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transform: 1s;
+}
+
+/* 
+  Provide the style for the element with class .friendshipCard when it is hovered:
+  > set the transform to perspective(2500px) rotate(5deg)
+  > set the box-shadow to inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5)
+*/
+.friendshipCard:hover{
+    transform:perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5); 
+}
+
+/* 
+  Provide the style for the element with class .cardFront:
+  > set the transform to rotateY(0deg)
+*/
+.friendshipCard:hover .cardFront{
+    transform: rotateY(-160deg);
+}
+
+/* 
+    Provide the style for the element with class .cardInside:
+    > set the position to relative
+    > set the background-color to #fff
+    > set the width to 250px
+    > set the height to 350px
+    > set the overflow to hidden
+    > set the transform-origin to left
+    > set the box-shadow to inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4)
+    > set the transition to .6s
+*/
+.cardFront{
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4);
+    transition: .6s; 
+}
+
+/* 
+    Provide the style for the element with class .happy:
+    > set the font-family to Tahoma, sans-serif
+    > set the text-align to center
+    > set the margin to 30px
+    > set the background-image to linear-gradient(120deg, #f6d365 0%, #fda085 100%)
+    > set the transition to .1s
+*/
+.happy{
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    margin: 30px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    transition: .1s;
+}
+
+/* 
+    Provide the style for the element with class balloons:
+    > set the position to absolute
+*/
+.balloons{
+    position: absolute;
+}
+
+/* 
+    Provide the style for the elements with classes .balloonOne, .balloonTwo, .balloonThree, .balloonFour:
+    > set the position to absolute
+    > set the width to 85px
+    > set the height to 95px
+    > set the border-radius to 50%
+*/
+.balloonOne, .balloonTwo, .balloonThree, .balloonFour{
+    position: absolute;
+    width: 85px;
+    height: 95px;
+    border-radius:50%;
+}
+
+/* 
+    Provide the style for the elements with classes .balloonOne:
+    > set the background-color to rgba(6, 214, 160, 0.7)
+    > set the left to 50px
+    > set the top to 20px
+*/
+.balloonOne{
+    background-color: rgba(239, 71, 111, 0.7);
+    left: -10px;
+    top: 50px;
+}
+
+/* 
+    Provide the style for the elements with classes .balloonTwo:
+    > set the background-color to rgba(255, 209, 102, 0.7)
+    > set the left to 110px
+    > set the top to 50px
+*/
+.balloonTwo {
+    background-color: rgba(6, 214, 160, 0.7);
+    left:50px;
+    top: 20px;
+}
+
+/* 
+    Provide the style for the elements with classes .balloonThree:
+    > set the background-color to rgba(255, 209, 102, 0.7)
+    > set the left to 110px
+    > set the top to 50px
+*/
+.balloonThree {
+    background-color: rgba(255, 209, 102, 0.7);
+    left: 110px;
+    top: 50px;
+}
+
+/* 
+    Provide the style for the elements with classes .balloonFour:
+    > set the background-color to rgba(17, 138, 178, 0.7)
+    > set the left to 170px
+    > set the top to 20px
+*/
+.balloonFour{
+    background-color: rgba(52, 100, 122, 0.7);
+    left: 170px;
+    top: 20px;
+}
+
+
+/* 
+    Provide the style for the elements with classes .balloonOne:before, .balloonTwo:before, .balloonThree:before, .balloonFour:before:
+    > set the content to ""
+    > set the position to absolute
+    > set the width to 1px
+    > set the height to 155px
+    > set the background-color to #ffd166
+    > set the top to 95px
+    > set the left to 43px
+*/
+.balloonOne:before, .balloonTwo:before, .balloonThree:before, .balloonFour:before{
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 155px;
+    background-color: #ffd166;
+    top: 95px;
+    left: 43px;
+}
+
+
+/* 
+    Provide the style for the elements with classes .balloonOne:after, .balloonTwo:after, .balloonThree:after, .balloonFour:after:
+    > set the content to ""
+    > set the position to absolute
+    > set the border-right to 7px solid transparent
+    > set the border-left to 7px solid transparent
+    > set the top to 94px
+    > set the left to 37px
+*/
+.balloonOne:after, .balloonTwo:after, .balloonThree:after, .balloonFour:after{
+    content:"";
+    position: absolute;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    top: 94px;
+    left: 37px;
+}
+
+/* 
+    Provide the style for the elements with classes .balloonOne:after:
+    > set the border-bottom to 10px solid #ef476f
+*/
+.balloonOne:after{
+    border-bottom: 10px solid #ef476f;
+}
+
+    
+/* 
+    Provide the style for the elements with classes .balloonTwo:after:
+    > set the border-bottom to 10px solid #06d6a0
+*/
+.balloonTwo:after{
+    border-bottom: 10px solid #06d6a0;
+}
+
+
+/* 
+    Provide the style for the elements with classes .balloonThree:after:
+    > set the border-bottom to 10px solid #ffd166
+*/
+.balloonThree:after{
+    border-bottom: 10px solid #ffd166;
+}
+
+/* 
+    Provide the style for the elements with classes .balloonFour:after:
+    > set the border-bottom to 10px solid #118ab2
+*/
+.balloonFour:after{
+    border-bottom: 10px solid #118ab2;
+}
+
+
+/* 
+    Provide the style for the element with class .cardInside:
+    > set the position to relative
+    > set the width to 250px
+    > set the height to 350px
+    > set the background-color to #fff
+    > set the border-radius to 10px
+    > set the box-shadow to 0 0 10px rgba(0,0,0,0.2)
+*/
+.cardInside{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+
+/* 
+    Provide the style for the element p:
+    > set the font-family to 'Brush Script MT', cursive
+    > set the margin to 40px
+    > set the color to #333
+*/
+p{
+    font-family: 'Brush Script MT', cursive;
+    margin: 40px;
+    color: #333;
+}
+/* 
+    Provide the style for the element with class .name:
+    > set the position to absolute
+    > set the left to 150px
+    > set the top to 200px
+    > set the color to #333
+*/
+.name{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    color: #333;
+}
+/* 
+    Provide the style for the element with class .from:
+    > set the position to absolute
+    > set the left to 150px
+    > set the top to 250px
+    > set the color to #333
+*/
+.from{
+    position: absolute;
+    left: 150px;
+    top: 250px;
+    color: #333
+}

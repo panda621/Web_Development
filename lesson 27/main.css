@@ -1,0 +1,67 @@
+h1{
+    font-family: "Bowlby One SC", cursive;
+    height: 50px;
+    text-align: center;
+}
+
+#container{
+    margin: auto;
+    width: 70%;
+    height: 400px;
+    background-color: #090939;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border: gold 10px double;
+}
+
+.main {
+    display: flex;
+}
+
+#left{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pic{
+    width: 100%;
+    max-height: 100%;
+    transition: all 0.5s;
+}
+
+#pic:hover{
+    width: 100%;
+}
+
+#right{
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    background-color: #fafafa;
+    border: grey 1px solid;
+}
+
+section{
+    padding: 25px 50px;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    opacity: 0.1;
+    font-size: 13px;
+    font-family: "Racing Sans One", cursive;
+    height: 300px;
+}
+
+.active {
+opacity: 1;
+}
+
+section:last-of-type {
+margin-bottom: 150px;
+}
+
+a {
+text-align: center;
+}

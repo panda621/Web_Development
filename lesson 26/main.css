@@ -1,0 +1,43 @@
+#gameArea {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    /* This defines the area of the game */
+}
+
+#player {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    /* This styles the player character */
+}
+
+/* Calculator Styles */
+/* Simple CSS to make the calculator buttons and display look nicer */
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 200px;
+    margin: auto;
+}
+
+#calculator button,
+#display {
+    padding: 20px;
+    font-size: 20px;
+}
+
+#cancel {
+    grid-column: span 2;
+    background-color: #ff0000;
+    color: #ffffff;
+    outline: none;
+    border: 0;
+}
+
+#display {
+    grid-column: span 4;
+    text-align: right;
+}

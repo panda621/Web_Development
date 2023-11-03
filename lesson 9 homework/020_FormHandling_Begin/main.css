@@ -1,0 +1,86 @@
+/* Set the default font family */
+* {
+    font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+/* Style the body tag */
+body {
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the registration form */
+#regForm {
+    align-items: center;
+    text-align: center;
+    margin : 20px;
+    box-shadow: 0 0 20px 0 rgba(188, 97, 216, 0.19), 0 0 6px 0 rgba(193, 90, 231, 0.23);
+    background-color : #f1f1f1;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    padding : 10px;
+    width : auto;
+}
+
+/* Style the labelInputDiv class */
+.labelInputDiv {
+    align-items: center;
+    text-align: left;
+    margin : 20px;
+    background-color : #ea8aef;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    padding : 20px;
+    display : flex;
+    justify-content : space-between;
+}
+
+label, input {
+    font-size: 1.2em;
+}
+
+/* Style the label tags */
+label {
+    width : 30%;
+    font-weight : bold;
+}
+
+/* Style the input tags */
+input {
+    outline: none;
+    border: 0;
+    height: 35px;
+    width :55%;
+    padding : 5px;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+}
+
+/* Style the title div */
+#regFormTitleDiv {
+    margin : 20px;
+    background-color : #f1f1f1;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    padding : 20px;
+    width : 50%;
+}
+
+/* Style the Buttons */
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin : 20px;
+    background-color : #ea8aef;
+    border : 1px solid #ccc;
+    border-radius : 5px;
+    padding : 10px;
+    width : 100px;
+}
+
+/* Style the button tag on hover */
+button:hover {
+    background-color : #b033b7;
+    border-radius : 120px;
+    color: #ccc;
+}

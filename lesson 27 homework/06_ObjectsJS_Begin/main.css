@@ -1,0 +1,36 @@
+/* Shared card styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+/* Library card-specific styles */
+.library-card {
+    background-color: #f0f8ff;
+}
+
+/* Book card-specific styles */
+.book-card {
+    background-color: #f0ffe0;
+}
+
+/* Person card-specific styles */
+.person-card {
+    background-color: #ffebd4;
+    width: 100%;
+}

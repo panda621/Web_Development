@@ -1,0 +1,122 @@
+*{
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    width:100vw
+}
+
+.p{
+    text-align: right ;
+} 
+
+.p_left{
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+
+.p{
+    text-align: left ;
+}
+
+.p_right {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.experience_span > p {
+    font-size: 1.2em;
+    background-color: rgb(rgb(109, 161, 26));
+    color: beige;
+    padding: 10px;
+}
+
+.p{
+    display: flex;
+    justify-content: center
+}
+
+
+.experience_span {
+    margin: 10px;
+}
+
+align-center_text
+align-items_center
+
+.main_container{
+    display:flex;
+    justify-content:center;  
+    flex-direction:column;
+}
+
+.subcontainer {
+    
+    width: 60vw;
+}
+
+.button_icons:hover{
+    background-color: rgb(20, 77, 77);
+}
+
+.button_icons {
+    border-top-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
+    outline: 0;
+    margin: 2px;
+    width: 30px;
+}
+
+.icons{
+    height: 30px;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between
+}
+
+.reactions{
+    margin: 10px;
+    /*Why is this not working?*/
+    /* below :class; */
+    display:flex;
+    justify-content: space-beetween;
+}
+
+.input_section {
+    padding: 10px;
+    outline: 0;
+    border : 0;
+}
+
+.comments, .submit_button{
+    font-size: 1.0em;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.submit_button{
+    background-color: rgb(49, 77, 68);
+    color: beige;
+}
+
+.comments{
+    width: 80%
+}
+
+.background{
+    background: url("tom_n_jerry.jpg");
+    width: 100px;
+    height: 100px;    
+}
+
+h1,h3{
+    background-color: rgb(69,69,69)
+}

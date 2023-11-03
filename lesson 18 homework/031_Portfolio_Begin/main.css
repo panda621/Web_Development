@@ -1,0 +1,349 @@
+/* 
+> Use font family to assign the universal font of Gill Sans
+Reference: https://www.w3schools.com/cssref/css_websafe_fonts.asp
+*/
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 
+EXAMPLE IMPLEMENTATION:
+
+> Use the Hash tag to style the the id of header
+> > Assign the background color to #ca6666
+> > Assign the text color to #fff
+> > Assign the padding to 20px
+> > Assign the text align to center
+
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+Reference: https://www.w3schools.com/cssref/pr_text_color.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_text_text-align.asp
+*/
+#header {
+    background-color: #ca6666;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+TODO:
+
+> Use the Hash tag to style the the id of left_section
+> > Assign the background color to #ca6666
+> > Assign the text color to #fff
+> > Assign the float to left
+> > Assign the padding to 10px
+> > Assign the height to 78vh
+> > Assign the text align to center
+> > Assign the width to 20%
+
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+Reference: https://www.w3schools.com/cssref/pr_text_color.asp
+Reference: https://www.w3schools.com/cssref/pr_class_float.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_dim_height.asp
+Reference: https://www.w3schools.com/cssref/pr_text_text-align.asp
+Reference: https://www.w3schools.com/cssref/pr_dim_width.asp
+*/
+#left_section {
+    background-color: #ca6666;
+    color: #fff;
+    float:left;
+    padding: 10px;
+    height: 78vh;
+    text-align: center;
+    width: 20%;
+}
+
+/* 
+TODO:
+
+> Use the Hash tag to style the the id of right_section
+> > Assign the background color to #fff
+> > Assign the text color to #000
+> > Assign the float to right
+> > Assign the padding to 10px
+> > Assign the height to 78vh
+> > Assign the text align to center
+> > Assign the width to 80%
+
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+Reference: https://www.w3schools.com/cssref/pr_text_color.asp
+Refaisonerence: https://www.w3schools.com/cssref/pr_class_float.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_dim_height.asp
+Reference: https://www.w3schools.com/cssref/pr_text_text-align.asp
+Reference: https://www.w3schools.com/cssref/pr_dim_width.asp
+*/
+#right_section{
+    background-color: #fff;
+    color: #000;
+    float: right;
+    padding: 10px;
+    height: 78vh;
+    text-align: center;
+    width: 80%;
+}
+
+
+/* 
+TODO:
+
+> Use the Hash tag to style the the id of article_content
+> > Assign the padding to 10px
+
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+*/
+#article_content > p {
+    padding: 10px;
+}
+
+/* 
+TODO:
+
+> Use the Hash tag to style the the id of article_heading
+> > Assign the background color to #40add1
+> > Assign the text color to #fff
+> > Assign the padding to 10px
+> > Assign the text align to center
+
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+Reference: https://www.w3schools.com/cssref/pr_text_color.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_text_text-align.asp
+*/
+#article_heading{
+    background-color: #40add1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 
+TODO:
+
+> Use the Hash tag to style the the id of article_heading and use th4
+> > Assign the font size to 1.3em
+
+Reference: https://www.w3schools.com/cssref/pr_font_font-size.asp
+*/
+#article_heading > h4 {
+    font-size: 1.3em;
+}
+
+/*
+TODO:
+
+> Use the element selector to style the ul
+> > Assign the list style type to none
+> > Assign the margin to 0
+> > Assign the padding to 0
+> > Assign the overflow to hidden
+> > Assign the text align to left
+> > Assign the background color to #ca6666
+
+Reference: https://www.w3schools.com/cssref/pr_list-style-type.asp
+Reference: https://www.w3schools.com/cssref/pr_margin.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_pos_overflow.asp
+Reference: https://www.w3schools.com/cssref/pr_text_text-align.asp
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    background-color: #ca6666;
+}
+
+/*
+TODO:
+
+> Use the element selector to style the li
+> > Assign the font size to 1.2em
+> > Assign the padding to 10px
+> > Assign the background to #40add1
+> > Assign the border top right radius to 10px
+> > Assign the border bottom right radius to 10px
+> > Assign the margin bottom to 5px
+
+Reference: https://www.w3schools.com/cssref/pr_font_font-size.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_background.asp
+Reference: https://www.w3schools.com/cssref/border-top-right-radius.asp
+Reference: https://www.w3schools.com/cssref/border-bottom-right-radius.asp
+Reference: https://www.w3schools.com/cssref/pr_margin.asp
+*/
+li {
+   font-size: 1.3em;
+   padding: 10px;
+   background: #40add1;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   margin-bottom: 5px;
+}
+
+/*
+TODO:
+
+> Use the element selector to style the li and use the hover pseudo class
+> > Assign the background color to #fff
+> > Assign the color to #000
+
+Reference: https://www.w3schools.com/cssref/sel_hover.asp
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+Reference: https://www.w3schools.com/cssref/pr_text_color.asp
+*/
+li:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*
+TODO:
+
+> Use the element selector to style the img
+> > Assign the width to 40%
+> > Assign the border radius to 10px
+
+Reference: https://www.w3schools.com/cssref/pr_dim_width.asp
+Reference: https://www.w3schools.com/cssref/border-radius.asp
+*/
+img {
+   width: 40%;
+   border-radius: 10px;
+}
+
+/* 
+TODO:
+
+> Use the Hash tag to style the the id of article_content
+> > Assign the padding to 10px
+
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+*/
+#article_content > p {
+    padding: 10px;
+}
+
+/* 
+TODO:
+
+> Use the Hash tag to style the the id of article_heading
+> > Assign the background color to #40add1
+> > Assign the text color to #fff
+> > Assign the padding to 10px
+> > Assign the text align to center
+
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+Reference: https://www.w3schools.com/cssref/pr_text_color.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_text_text-align.asp
+*/
+#article_heading {
+    background-color: #40add1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 
+TODO:
+
+> Use the Hash tag to style the the id of article_heading and use th4
+> > Assign the font size to 1.3em
+
+Reference: https://www.w3schools.com/cssref/pr_font_font-size.asp
+*/
+#article_heading > h4 {
+   font-size: 1.3em;
+}
+
+/*
+TODO:
+
+> Use the element selector to style the ul
+> > Assign the list style type to none
+> > Assign the margin to 0
+> > Assign the padding to 0
+> > Assign the overflow to hidden
+> > Assign the text align to left
+> > Assign the background color to #ca6666
+
+Reference: https://www.w3schools.com/cssref/pr_list-style-type.asp
+Reference: https://www.w3schools.com/cssref/pr_margin.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_pos_overflow.asp
+Reference: https://www.w3schools.com/cssref/pr_text_text-align.asp
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+*/
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   text-align: left;
+   background-color: #ca6666;
+}
+
+/* 
+TODO:
+
+> Use the element selector to style the li
+> > Assign the font size to 1.2em
+> > Assign the padding to 10px
+> > Assign the background to #40add1
+> > Assign the border top right radius to 10px
+> > Assign the border bottom right radius to 10px
+> > Assign the margin bottom to 5px
+
+Reference: https://www.w3schools.com/cssref/pr_font_font-size.asp
+Reference: https://www.w3schools.com/cssref/pr_padding.asp
+Reference: https://www.w3schools.com/cssref/pr_background.asp
+Reference: https://www.w3schools.com/cssref/border-top-right-radius.asp
+Reference: https://www.w3schools.com/cssref/border-bottom-right-radius.asp
+Reference: https://www.w3schools.com/cssref/pr_margin.asp
+*/
+li {
+     font-size: 1.2em;
+     padding: 10px;
+     background: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+     margin-bottom: 5px;
+}
+
+/*
+TODO:
+
+> Use the element selector to style the li and use the hover pseudo class
+> > Assign the background color to #fff
+> > Assign the color to #000
+
+Reference: https://www.w3schools.com/cssref/sel_hover.asp
+Reference: https://www.w3schools.com/cssref/pr_background-color.asp
+Reference: https://www.w3schools.com/cssref/pr_text_color.asp
+*/
+li:hover {
+   background-color: #fff;
+   color: #000;   
+}
+
+/*
+TODO:
+
+> Use the element selector to style the img
+> > Assign the width to 40%
+> > Assign the border radius to 10px
+
+Reference: https://www.w3schools.com/cssref/pr_dim_width.asp
+Reference: https://www.w3schools.com/cssref/border-radius.asp
+*/
+img {
+    width: 40%;
+    border-radius: 10px;
+}

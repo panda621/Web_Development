@@ -1,0 +1,8 @@
+{
+    "name": "library",
+    "description": "Library project using objects",
+    "version": "0.0.1",
+    "main": "index.js",
+    "type": "module",
+    "author": "Billy Micah"
+}

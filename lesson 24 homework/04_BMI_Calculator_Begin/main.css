@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    margin: 1em 0;
+}
+
+#result {
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#quiz-container {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.option {
+    margin: 5px 0;
+}
+
+.option input {
+    margin-right: 5px;
+}
+
+#submit {
+    display: block;
+    margin: 10px 0;
+}
+
+.explanation {
+    display: none;
+    margin: 10px 0;
+    color: red;
+}
+
+.explanation.correct {
+    color: green;
+}
+
+.explanation.active {
+    display: block;
+}
